@@ -26,14 +26,14 @@
     <file path="/application_helper.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379273818856" ignored="false" />
     <file path="/update.js.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379255288727" ignored="false" />
     <file path="/_well_content.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379273718185" ignored="false" />
-    <file path="/pending.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379266641482" ignored="false" />
+    <file path="/pending.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379275082999" ignored="false" />
     <file path="/new.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379256713478" ignored="false" />
     <file path="/_links.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379256524438" ignored="false" />
     <file path="/edit.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379267537038" ignored="false" />
     <file path="/destroy.js.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379257265303" ignored="false" />
     <file path="/users_controller.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379258778216" ignored="false" />
     <file path="/application_controller.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379258888481" ignored="false" />
-    <file path="/reporting.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379274755919" ignored="false" />
+    <file path="/reporting.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379275262027" ignored="false" />
     <file path="/_my_bets.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379268514049" ignored="false" />
     <file path="/seeds.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379269463412" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -82,19 +82,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bet.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bet.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/bet.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="59" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.6585956">
+            <state line="62" column="8" selection-start="1337" selection-end="1341" vertical-scroll-proportion="-1.5384616">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reporting.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pending.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/bets/pending.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="47" selection-start="631" selection-end="631" vertical-scroll-proportion="-13.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reporting.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard/reporting.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="47" selection-start="410" selection-end="410" vertical-scroll-proportion="-5.58">
+            <state line="22" column="32" selection-start="483" selection-end="483" vertical-scroll-proportion="0.8442623">
               <folding />
             </state>
           </provider>
@@ -111,7 +120,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/bets/pending.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" />
         <option value="$PROJECT_DIR$/db/migrate/20130915112145_create_bets.rb" />
         <option value="$PROJECT_DIR$/app/models/bid.rb" />
@@ -125,6 +133,7 @@
         <option value="$PROJECT_DIR$/app/views/dashboard/_well_content.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/models/bet.rb" />
+        <option value="$PROJECT_DIR$/app/views/bets/pending.html.erb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/reporting.html.erb" />
       </list>
     </option>
@@ -236,6 +245,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -625,13 +656,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="444" selection-end="444" vertical-scroll-proportion="0.38732395">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/bid.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="34" selection-start="256" selection-end="266" vertical-scroll-proportion="-1.1538461">
@@ -723,16 +747,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard/reporting.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/bets/pending.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="47" selection-start="410" selection-end="410" vertical-scroll-proportion="-5.58">
+        <state line="23" column="47" selection-start="631" selection-end="631" vertical-scroll-proportion="-13.75">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/bet.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="59" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.6585956">
+        <state line="62" column="8" selection-start="1337" selection-end="1341" vertical-scroll-proportion="-1.5384616">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/reporting.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="32" selection-start="483" selection-end="483" vertical-scroll-proportion="0.8442623">
           <folding />
         </state>
       </provider>

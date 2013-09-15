@@ -7,6 +7,8 @@
   <table class="table table-striped table-bordered">
     <thead>
     <tr>
+      <th>Username</th>
+      <th>Name</th>
       <th>Bid Amount Earned</th>
       <th>Potential Payout</th>
       <th>Status</th>
@@ -17,6 +19,8 @@
     <% @bets.each do |bet| %>
 
         <tr>
+          <td><%= bet.user.username %></td>
+          <td><%= "#{bet.name} - ##{bet.id}" %></td>
           <td><%= number_to_currency bet.bid_amount_earned %></td>
           <td><%= number_to_currency bet.potential_payout %></td>
           <td><span class="label label-<%= bet.state %>"><%= bet.state %> </span></td>
