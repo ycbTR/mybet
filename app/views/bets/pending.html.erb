@@ -11,6 +11,7 @@
     <th>Bids Count</th>
     <th>Current Bid</th>
     <th>Potential Payout</th>
+    <th>Final Odds</th>
     <th>Actions</th>
   </tr>
   <tbody>
@@ -22,6 +23,7 @@
         <td><%= bet.bids.count %></td>
         <td><%= number_to_currency bet.current_bid_price %></td>
         <td><%= number_to_currency bet.potential_payout %></td>
+        <td><%= bet.final_odds %></td>
         <td><%= link_to_with_icon "icon-ok", "Bid", bid_bet_path(bet), :class => "btn btn-small btn-primary", :method => :put, :confirm => "Are you sure?" %></td>
       </tr>
   <% end %>
