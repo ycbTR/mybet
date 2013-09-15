@@ -26,7 +26,7 @@
     <file path="/application_helper.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379273818856" ignored="false" />
     <file path="/update.js.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379255288727" ignored="false" />
     <file path="/_well_content.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379278957789" ignored="false" />
-    <file path="/pending.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379277890288" ignored="false" />
+    <file path="/pending.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379280291546" ignored="false" />
     <file path="/new.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379256713478" ignored="false" />
     <file path="/_links.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379256524438" ignored="false" />
     <file path="/edit.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379276925525" ignored="false" />
@@ -68,7 +68,7 @@
       <file leaf-file-name="pending.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/bets/pending.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="46" selection-start="760" selection-end="760" vertical-scroll-proportion="0.6332454">
+            <state line="26" column="39" selection-start="758" selection-end="758" vertical-scroll-proportion="0.6332454">
               <folding />
             </state>
           </provider>
@@ -800,7 +800,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/bets/pending.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="46" selection-start="760" selection-end="760" vertical-scroll-proportion="0.6332454">
+        <state line="26" column="39" selection-start="758" selection-end="758" vertical-scroll-proportion="0.6332454">
           <folding />
         </state>
       </provider>
