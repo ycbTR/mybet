@@ -18,9 +18,9 @@
 
         <tr>
           <td><%= bet.bid_amount_earned %></td>
-          <td><%= bet.potential_payout %></td>
+          <td><%= number_to_currency bet.potential_payout %></td>
           <td><span class="label label-<%= bet.state %>"><%= bet.state %> </span></td>
-          <td><%= bet.gross_bet_earnings %></td>
+          <td><%= number_to_currency bet.gross_bet_earnings %></td>
         </tr>
 
     <% end %>

@@ -60,14 +60,13 @@ class Bet < ActiveRecord::Base
   end
 
   def potential_payout
-    self.bids.count * self.bid_amount * final_odds
+    self.bids.count * self.bid_amount * self.final_odds
   end
 
   def gross_bet_earnings
     case self.state
       when "won"
-        2
-        (current_bid_price * self.final_odds) - (self.bid_amount_earned)
+        (bid_amount_earned) - (self.bids.count * self.bid_amount * self.final_odds)
       when "lost"
         bid_amount_earned
     end
@@ -79,6 +78,7 @@ class Bet < ActiveRecord::Base
     _copy.last_bidder_id = nil
     _copy.save!
   end
+
 
   def current_bid_price
     (self.bids.count + 1) * self.bid_amount
