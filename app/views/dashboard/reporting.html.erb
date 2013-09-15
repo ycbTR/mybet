@@ -1,0 +1,52 @@
+<div class="well">
+
+  <div class="page-header">
+    <h1>OVERALL REPORTING</h1>
+  </div>
+
+  <table class="table table-striped table-bordered">
+    <thead>
+    <tr>
+      <th>Bid Amount Earned</th>
+      <th>Potential Payout</th>
+      <th>Status</th>
+      <th>Gross Bet Earnings</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @bets.each do |bet| %>
+
+        <tr>
+          <td><%= bet.bid_amount_earned %></td>
+          <td><%= bet.potential_payout %></td>
+          <td><span class="label label-<%= bet.state %>"><%= bet.state %> </span></td>
+          <td><%= bet.gross_bet_earnings %></td>
+        </tr>
+
+    <% end %>
+    </tbody>
+  </table>
+</div>
+<hr>
+<div class="well">
+  <h1>FULL SUMMARY</h1>
+  <hr>
+  <table class="table table-striped table-bordered table-full-summary">
+    <thead>
+    <tr>
+      <th>TOTAL EARNINGS</th>
+      <th>TOTAL BETS COMPLETED</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><%= number_to_currency @bets.map(&:gross_bet_earnings).sum %></td>
+      <td>
+        <span class="label label-won"> <%= "#{@bets.where(:state => "won").count} / WON" %>  </span>
+        <span class="label label-lost"> <%= "#{@bets.where(:state => "lost").count} / LOST" %>  </span>
+      </td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>

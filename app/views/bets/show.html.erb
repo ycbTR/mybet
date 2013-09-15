@@ -1,0 +1,33 @@
+<%- model_class = Bet -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => "#{model_class.model_name.human.titleize}##{@bet.id}" %></h1>
+  <%= form_for @bet, :html => {:class => 'form-horizontal'} do |f| %>
+      <%= f.hidden_field :state, :value => "pending" %>
+      <%= f.submit "Confirm", :class => "btn btn-primary" %>
+  <% end %>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @bet.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:date) %>:</strong></dt>
+  <dd><%= @bet.date %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:original_odds) %>:</strong></dt>
+  <dd><%= @bet.original_odds %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:odd_inflation) %>:</strong></dt>
+  <dd><%= @bet.odd_inflation %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:bid_amount) %>:</strong></dt>
+  <dd><%= @bet.bid_amount %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
+  <dd><%= @bet.description %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_bet_path(@bet), :class => 'btn' %>                    or
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              bet_path(@bet),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

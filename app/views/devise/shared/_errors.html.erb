@@ -1,0 +1,9 @@
+<% if target && target.errors.any? %>
+    <div class="well well-small" style="border: 1px solid red;">
+      <ul>
+        <% target.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+<% end %>

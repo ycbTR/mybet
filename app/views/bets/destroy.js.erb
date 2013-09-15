@@ -1,0 +1,3 @@
+$('#well-<%= params[:id] %>').remove();
+
+$('#main-content').prepend('<%= (escape_javascript(bootstrap_flash)) %>');

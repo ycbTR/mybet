@@ -1,0 +1,8 @@
+<% @bets.each do |bet| %>
+
+    <div class="well" id='<%= "well-#{bet.id}"%>' >
+      <div id="well-content-<%= bet.id %>">
+        <%= render :partial => "well_content", :locals => {:bet => bet} %>
+      </div>
+    </div>
+<% end %>

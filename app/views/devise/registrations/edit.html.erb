@@ -1,0 +1,161 @@
+<div class="span12">
+
+  <div class="page-header">
+    <div class="pull-left">
+      <h2>My Account</h2>
+    </div>
+    <% if @current_user.has_role?('admin') %>
+        <div class="pull-right header-button">
+          <div class="btn-group">
+
+            <%= link_to_with_icon "icon-user", "Users", users_path, :class => "btn btn-info" %>
+          </div>
+        </div>
+    <% end %>
+    <div class="clearfix"></div>
+
+  </div>
+
+  <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:method => :put, :class => "form-horizontal"}) do |f| %>
+
+      <div class="control-group">
+        <%= f.label :username, :class => "control-label" %>
+        <div class="controls">
+          <%= f.text_field :username, :class => "text_field" %>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= f.label :email, :class => "control-label" %>
+        <div class="controls">
+          <%= f.email_field :email, :autofocus => true, :class => "text_field" %>
+        </div>
+      </div>
+
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+          <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+      <% end %>
+
+
+      <div class="control-group">
+        <%= f.label :password, :class => "control-label" %>
+
+        <div class="controls">
+          <%= f.password_field :password, :autocomplete => "off", :class => "text_field" %>
+          <i>(leave blank if you don't want to change it)</i>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= f.label :password_confirmation, :class => "control-label" %>
+        <div class="controls">
+          <%= f.password_field :password_confirmation, :autocomplete => "off", :class => "text_field" %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= f.label :current_password, :class => "control-label" %>
+
+        <div class="controls">
+          <%= f.password_field :current_password, :autocomplete => "off", :class => "text_field" %>
+          <i>(we need your current password to confirm your changes)</i>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <%= f.submit "Update", :class => "btn btn-primary" %> or
+        <%= link_to "Back", root_path %>
+      </div>
+  <% end %>
+</div>
+<hr>
+<div class="well span5">
+  <div class="page-header">
+    <h3>My Bets as Last Person</h3>
+  </div>
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>Bet</th>
+      <th>Bid Amount</th>
+      <th>My Bid Amount Total</th>
+      <th>Amount of Bids</th>
+      <th>Original Odds</th>
+      <th>Final Odds</th>
+      <th colspan="2">Current Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% current_user.bets_as_last_person.each do |bet| %>
+        <tr>
+          <td><%= "#{bet.name}" %></td>
+          <td><%= number_to_currency bet.bid_amount %></td>
+          <td><%= number_to_currency bet.bid_amount_of_person(current_user) %></td>
+          <td><%= bet.bids.count %></td>
+          <td><%= bet.original_odds %></td>
+          <td><%= bet.final_odds %></td>
+          <td>
+            <span class="label label-<%= bet.state %>"><%= bet.state.titleize %></span>
+          </td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+
+
+</div>
+
+<div class="well span5">
+  <div class="page-header">
+    <h3>Balance</h3>
+  </div>
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th colspan="3">Live Bets</th>
+    </tr>
+    <tr>
+      <th>BET NAME</th>
+      <th>MY BID AMOUNT TOTAL</th>
+      <th>IS LAST PERSON</th>
+      <th>BET STATUS</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% current_user.live_bets_as_bidder.each do |bet| %>
+        <tr>
+          <td> <%= bet.name %> </td>
+          <td> <%= number_to_currency bet.bid_amount_of_person(current_user) %> </td>
+          <td> <%= bet.is_last_person?(current_user) %> </td>
+          <td><span class="label label-<%= bet.state %>"><%= bet.state %> </span> </td>
+        </tr>
+    <% end %>
+
+    </tbody>
+  </table>
+  <hr>
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th colspan="3">Past Bets</th>
+    </tr>
+    <tr>
+      <th>BET NAME</th>
+      <th>MY BID AMOUNT TOTAL</th>
+      <th>IS LAST PERSON</th>
+      <th>BET STATUS</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% current_user.past_bets_as_bidder.each do |bet| %>
+        <tr>
+          <td> <%= bet.name %> </td>
+          <td> <%= number_to_currency bet.bid_amount_of_person(current_user) %> </td>
+          <td> <%= bet.is_last_person?(current_user) %> </td>
+          <td><span class="label label-<%= bet.state %>"><%= bet.state %> </span> </td>
+        </tr>
+    <% end %>
+
+    </tbody>
+
+  </table>
+</div>

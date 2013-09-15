@@ -1,0 +1,28 @@
+<div class="page-header">
+  <h1>Pending Bets</h1>
+</div>
+
+<table class="table table-striped table-bordered">
+  <thead>
+  <tr>
+    <th>Username</th>
+    <th>Name</th>
+    <th>Bid Amount</th>
+    <th>Bids Count</th>
+    <th>Current Bid</th>
+    <th>Actions</th>
+  </tr>
+  <tbody>
+  <% @bets.each do |bet| %>
+      <tr>
+        <td><%= bet.user.username %></td>
+        <td><%= bet.name %></td>
+        <td><%= number_to_currency bet.bid_amount %></td>
+        <td><%= bet.bids.count %></td>
+        <td><%= number_to_currency bet.current_bid_price %></td>
+        <td><%= link_to_with_icon "icon-ok", "Bid", bid_bet_path(bet), :class => "btn btn-small btn-primary", :method => :put, :confirm => "Are you sure?" %></td>
+      </tr>
+  <% end %>
+  </tbody>
+  </thead>
+</table>

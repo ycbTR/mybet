@@ -1,0 +1,4 @@
+$("#well-content-<%= params[:id] %>").html("<%= escape_javascript(render :partial => "well_content",
+ :locals => {:bet => @bet}, :formats => [:html]) %>");
+
+$('.btn-group.open').removeClass('open');

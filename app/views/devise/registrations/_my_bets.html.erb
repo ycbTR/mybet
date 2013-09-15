@@ -1,0 +1,27 @@
+<table class="table table-bordered table-striped">
+  <thead>
+  <tr>
+    <th>Bet</th>
+    <th>Bid Amount</th>
+    <th>My Bid Amount Total</th>
+    <th>Amount of Bids</th>
+    <th>Original Odds</th>
+    <th>Final Odds</th>
+    <th colspan="2">Current Status</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><%= "#{bet.name}" %></td>
+    <td><%= number_to_currency bet.bid_amount %></td>
+    <td><%= number_to_currency bet.bid_amount_of_person(current_user) %></td>
+    <td><%= bet.bids.count %></td>
+    <td><%= bet.original_odds %></td>
+    <td><%= bet.final_odds %></td>
+    <td>
+            <span class="label label-<%= bet.state %>"><%= bet.state.titleize %>
+                                </span>
+    </td>
+  </tr>
+  </tbody>
+</table>

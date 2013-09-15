@@ -1,0 +1,77 @@
+<%= form_for @bet, :html => {:class => 'form-horizontal'} do |f| %>
+    <div class="control-group">
+      <%= f.label :name, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :name, :class => 'text_field' %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :date, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :date, :class => 'datepicker', :size => "16" %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :original_odds, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.number_field :original_odds, :class => 'text_field' %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :odd_inflation, :class => 'control-label' %>
+      <div class="controls">
+        <label class="radio">
+          <%= f.radio_button :odd_inflation, 10.0, :class => 'radio_input' %>  10x
+        </label>
+        <label class="radio">
+          <%= f.radio_button :odd_inflation, 20.0, :class => 'radio_input' %>  20x
+        </label>
+        <label class="radio">
+          <%= f.radio_button :odd_inflation, 50.0, :class => 'radio_input' %>  50x
+        </label>
+        <label class="radio">
+          <%= f.radio_button :odd_inflation, 100.0, :class => 'radio_input' %>  100x
+        </label>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :bid_amount, :class => 'control-label' %>
+      <div class="controls">
+        <div>
+          <label class="radio">
+            <%= f.radio_button :bid_amount, 1.0, :class => 'text_field' %>  $1
+          </label>
+          <label class="radio">
+
+            <%= f.radio_button :bid_amount, 5.0, :class => 'text_field' %>  $5
+          </label>
+          <label class="radio">
+
+            <%= f.radio_button :bid_amount, 10.0, :class => 'text_field' %>  $10
+          </label>
+          <label class="radio">
+
+            <%= f.radio_button :bid_amount, 25.0, :class => 'text_field' %>  $25
+          </label>
+          <label class="radio">
+
+            <%= f.radio_button :bid_amount, 50.0, :class => 'text_field' %>  $50
+          </label>
+
+        </div>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :description, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_area :description, :class => 'text_area', :rows => "5" %>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                  root_path, :class => 'btn' %>
+    </div>
+<% end %>
