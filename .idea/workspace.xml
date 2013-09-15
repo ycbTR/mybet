@@ -33,7 +33,7 @@
     <file path="/destroy.js.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379257265303" ignored="false" />
     <file path="/users_controller.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379258778216" ignored="false" />
     <file path="/application_controller.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379258888481" ignored="false" />
-    <file path="/reporting.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379275262027" ignored="false" />
+    <file path="/reporting.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379275384775" ignored="false" />
     <file path="/_my_bets.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379268514049" ignored="false" />
     <file path="/seeds.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379269463412" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -85,7 +85,7 @@
       <file leaf-file-name="bet.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/bet.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="8" selection-start="1337" selection-end="1341" vertical-scroll-proportion="-1.5384616">
+            <state line="61" column="6" selection-start="1316" selection-end="1316" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
@@ -94,7 +94,7 @@
       <file leaf-file-name="pending.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/bets/pending.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="47" selection-start="631" selection-end="631" vertical-scroll-proportion="-13.75">
+            <state line="23" column="44" selection-start="628" selection-end="628" vertical-scroll-proportion="-13.125">
               <folding />
             </state>
           </provider>
@@ -103,7 +103,7 @@
       <file leaf-file-name="reporting.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard/reporting.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="32" selection-start="483" selection-end="483" vertical-scroll-proportion="0.8442623">
+            <state line="10" column="18" selection-start="201" selection-end="201" vertical-scroll-proportion="0.14754099">
               <folding />
             </state>
           </provider>
@@ -747,23 +747,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/bets/pending.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/bet.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="47" selection-start="631" selection-end="631" vertical-scroll-proportion="-13.75">
+        <state line="61" column="6" selection-start="1316" selection-end="1316" vertical-scroll-proportion="-5.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/bet.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/bets/pending.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="8" selection-start="1337" selection-end="1341" vertical-scroll-proportion="-1.5384616">
+        <state line="23" column="44" selection-start="628" selection-end="628" vertical-scroll-proportion="-13.125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/reporting.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="32" selection-start="483" selection-end="483" vertical-scroll-proportion="0.8442623">
+        <state line="10" column="18" selection-start="201" selection-end="201" vertical-scroll-proportion="0.14754099">
           <folding />
         </state>
       </provider>
