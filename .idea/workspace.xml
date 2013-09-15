@@ -33,7 +33,7 @@
     <file path="/destroy.js.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379257265303" ignored="false" />
     <file path="/users_controller.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379258778216" ignored="false" />
     <file path="/application_controller.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379258888481" ignored="false" />
-    <file path="/reporting.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379274256645" ignored="false" />
+    <file path="/reporting.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379274755919" ignored="false" />
     <file path="/_my_bets.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379268514049" ignored="false" />
     <file path="/seeds.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379269463412" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -85,7 +85,7 @@
       <file leaf-file-name="bet.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/bet.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="36" selection-start="1585" selection-end="1585" vertical-scroll-proportion="0.76755446">
+            <state line="99" column="59" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.6585956">
               <folding />
             </state>
           </provider>
@@ -94,7 +94,7 @@
       <file leaf-file-name="reporting.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard/reporting.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="49" selection-start="195" selection-end="195" vertical-scroll-proportion="-2.58">
+            <state line="19" column="47" selection-start="410" selection-end="410" vertical-scroll-proportion="-5.58">
               <folding />
             </state>
           </provider>
@@ -124,8 +124,8 @@
         <option value="$PROJECT_DIR$/app/controllers/bets_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/_well_content.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/dashboard/reporting.html.erb" />
         <option value="$PROJECT_DIR$/app/models/bet.rb" />
+        <option value="$PROJECT_DIR$/app/views/dashboard/reporting.html.erb" />
       </list>
     </option>
   </component>
@@ -725,14 +725,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/reporting.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="49" selection-start="195" selection-end="195" vertical-scroll-proportion="-2.58">
+        <state line="19" column="47" selection-start="410" selection-end="410" vertical-scroll-proportion="-5.58">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/bet.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="36" selection-start="1585" selection-end="1585" vertical-scroll-proportion="0.76755446">
+        <state line="99" column="59" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.6585956">
           <folding />
         </state>
       </provider>
