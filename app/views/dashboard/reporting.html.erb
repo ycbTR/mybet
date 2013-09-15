@@ -11,8 +11,8 @@
       <th>Username</th>
       <th>Bid Amount Earned</th>
       <th>Potential Payout</th>
-      <th>Status</th>
       <th>Gross Bet Earnings</th>
+      <th>Status</th>
     </tr>
     </thead>
     <tbody>
@@ -23,8 +23,8 @@
           <td><%= bet.user.username %></td>
           <td><%= number_to_currency bet.bid_amount_earned %></td>
           <td><%= number_to_currency bet.potential_payout %></td>
-          <td><span class="label label-<%= bet.state %>"><%= bet.state %> </span></td>
           <td><%= number_to_currency bet.gross_bet_earnings %></td>
+          <td><span class="label label-<%= bet.state %>"><%= bet.state %> </span></td>
         </tr>
 
     <% end %>
