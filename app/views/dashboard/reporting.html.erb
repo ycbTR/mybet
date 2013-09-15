@@ -19,7 +19,7 @@
     <% @bets.each do |bet| %>
 
         <tr>
-          <td><%= "#{bet.name} | #{bet.id}" %></b></td>
+          <td><%= "#{bet.name} | #{bet.id}" %></td>
           <td><%= bet.user.username %></td>
           <td><%= number_to_currency bet.bid_amount_earned %></td>
           <td><%= number_to_currency bet.potential_payout %></td>
