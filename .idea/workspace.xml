@@ -15,7 +15,7 @@
     <file path="/20130915112145_create_bets.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379267838083" ignored="false" />
     <file path="/bid.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379267864866" ignored="false" />
     <file path="/user.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379268652369" ignored="false" />
-    <file path="/bet.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379273485925" ignored="false" />
+    <file path="/bet.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379273660488" ignored="false" />
     <file path="/20130915112957_create_bids.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379259364363" ignored="false" />
     <file path="/application.js" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379246878568" ignored="false" />
     <file path="/_form.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379258262033" ignored="false" />
@@ -25,7 +25,7 @@
     <file path="/show.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379250462439" ignored="false" />
     <file path="/application_helper.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379257055513" ignored="false" />
     <file path="/update.js.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379255288727" ignored="false" />
-    <file path="/_well_content.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379273434505" ignored="false" />
+    <file path="/_well_content.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379273718185" ignored="false" />
     <file path="/pending.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379266641482" ignored="false" />
     <file path="/new.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379256713478" ignored="false" />
     <file path="/_links.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379256524438" ignored="false" />
@@ -55,10 +55,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_well_content.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_well_content.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard/_well_content.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="78" selection-start="935" selection-end="953" vertical-scroll-proportion="-8.75">
+            <state line="2" column="30" selection-start="84" selection-end="84" vertical-scroll-proportion="0.07462686">
               <folding />
             </state>
           </provider>
@@ -82,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bet.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bet.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/bet.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="6" selection-start="1602" selection-end="1602" vertical-scroll-proportion="0.33257404">
+            <state line="78" column="31" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,10 +113,10 @@
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/dashboard/_well_content.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/bet.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/bets_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/bet.rb" />
+        <option value="$PROJECT_DIR$/app/views/dashboard/_well_content.html.erb" />
       </list>
     </option>
   </component>
@@ -707,13 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard/_well_content.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="78" selection-start="935" selection-end="953" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/bets_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="17" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
@@ -723,7 +716,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/bet.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="6" selection-start="1602" selection-end="1602" vertical-scroll-proportion="0.33257404">
+        <state line="78" column="31" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/_well_content.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="30" selection-start="84" selection-end="84" vertical-scroll-proportion="0.07462686">
           <folding />
         </state>
       </provider>

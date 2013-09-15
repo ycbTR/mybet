@@ -76,6 +76,7 @@ class Bet < ActiveRecord::Base
 
   def duplicate
     _copy = self.dup
+    _copy.last_bidder_id = nil
     _copy.save!
   end
 
