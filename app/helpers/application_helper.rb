@@ -28,7 +28,7 @@ module ApplicationHelper
   end
 
   def simple_date(date)
-    date.strftime('%b %d, %Y')
+    date.strftime('%b %d, %Y') rescue ""
   end
 
 end

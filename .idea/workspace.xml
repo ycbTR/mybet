@@ -23,7 +23,7 @@
     <file path="/fragment.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379268379187" ignored="false" />
     <file path="/bets_controller.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379273544582" ignored="false" />
     <file path="/show.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379250462439" ignored="false" />
-    <file path="/application_helper.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379257055513" ignored="false" />
+    <file path="/application_helper.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379273818856" ignored="false" />
     <file path="/update.js.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379255288727" ignored="false" />
     <file path="/_well_content.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379273718185" ignored="false" />
     <file path="/pending.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379266641482" ignored="false" />
@@ -55,10 +55,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_well_content.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_well_content.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard/_well_content.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="30" selection-start="84" selection-end="84" vertical-scroll-proportion="0.07462686">
+            <state line="2" column="30" selection-start="84" selection-end="84" vertical-scroll-proportion="-1.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="39" selection-start="864" selection-end="864" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="717" selection-end="717" vertical-scroll-proportion="0.64096385">
               <folding />
             </state>
           </provider>
@@ -101,7 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/bets/pending.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" />
@@ -117,6 +134,7 @@
         <option value="$PROJECT_DIR$/app/controllers/bets_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/bet.rb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/_well_content.html.erb" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
       </list>
     </option>
   </component>
@@ -616,20 +634,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="231" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/bets/pending.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="18" selection-start="377" selection-end="377" vertical-scroll-proportion="-5.4583335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="0" selection-start="444" selection-end="444" vertical-scroll-proportion="0.38732395">
@@ -723,7 +727,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/_well_content.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="30" selection-start="84" selection-end="84" vertical-scroll-proportion="0.07462686">
+        <state line="2" column="30" selection-start="84" selection-end="84" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="39" selection-start="864" selection-end="864" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="717" selection-end="717" vertical-scroll-proportion="0.64096385">
           <folding />
         </state>
       </provider>
