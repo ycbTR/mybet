@@ -1,8 +1,40 @@
-<% @bets.each do |bet| %>
+<div class="page-header">
+  <div class="pull-left">
+    <h1>Dashboard
+      <% if params[:state] %>
+      <small><%= "#{params[:state].titleize} Bets" %></small>
+      <% end %>
+    </h1>
+  </div>
+  <div class="pull-right header-button">
+    <%= select_tag "filter", options_for_select(@options), :prompt => "Filter Bets", :class => "filter-select" %>
+  </div>
+  <div class="clearfix"></div>
+</div>
 
-    <div class="well" id='<%= "well-#{bet.id}"%>' >
-      <div id="well-content-<%= bet.id %>">
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th>Name | ID</th>
+    <th>Bid Amount</th>
+    <th>Amount of Bids</th>
+    <th>Original Odds</th>
+    <th>Final Odds</th>
+    <th colspan="2">Current Status</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @bets.each do |bet| %>
+      <tr id="well-content-<%= bet.id %>">
         <%= render :partial => "well_content", :locals => {:bet => bet} %>
-      </div>
-    </div>
-<% end %>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<script>
+    $('.filter-select').on('change', function () {
+        window.document.location.href = $(this).val();
+    });
+</script>

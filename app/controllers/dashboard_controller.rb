@@ -3,6 +3,16 @@ class DashboardController < ApplicationController
 
   def index
     @bets = Bet.where("state != 'new'")
+
+    if params[:state]
+      @bets = @bets.where(:state => params[:state])
+    end
+    @options = [
+        ["All Bets", root_path],
+        ["Won Bets", root_path(:state => "won")],
+        ["Lost Bets", root_path(:state => "lost")],
+        ["Pending Bets", root_path(:state => "pending")]
+    ]
   end
 
 
