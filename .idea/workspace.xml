@@ -14,8 +14,8 @@
     <file path="/bootstrap_and_overrides.css" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379266849062" ignored="false" />
     <file path="/20130915112145_create_bets.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379267838083" ignored="false" />
     <file path="/bid.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379267864866" ignored="false" />
-    <file path="/user.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379268652369" ignored="false" />
-    <file path="/bet.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379274455988" ignored="false" />
+    <file path="/user.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379276653874" ignored="false" />
+    <file path="/bet.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379275998946" ignored="false" />
     <file path="/20130915112957_create_bids.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379259364363" ignored="false" />
     <file path="/application.js" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379246878568" ignored="false" />
     <file path="/_form.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379258262033" ignored="false" />
@@ -26,10 +26,10 @@
     <file path="/application_helper.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379273818856" ignored="false" />
     <file path="/update.js.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379255288727" ignored="false" />
     <file path="/_well_content.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379273718185" ignored="false" />
-    <file path="/pending.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379275082999" ignored="false" />
+    <file path="/pending.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379276031392" ignored="false" />
     <file path="/new.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379256713478" ignored="false" />
     <file path="/_links.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379256524438" ignored="false" />
-    <file path="/edit.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379267537038" ignored="false" />
+    <file path="/edit.html.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379276925525" ignored="false" />
     <file path="/destroy.js.erb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379257265303" ignored="false" />
     <file path="/users_controller.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379258778216" ignored="false" />
     <file path="/application_controller.rb" changelist="e258f558-046d-46ca-beea-c14c24e59d6e" time="1379258888481" ignored="false" />
@@ -55,55 +55,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_well_content.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/dashboard/_well_content.html.erb">
+      <file leaf-file-name="edit.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="30" selection-start="84" selection-end="84" vertical-scroll-proportion="-1.25">
+            <state line="61" column="26" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.3283582">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="6" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="23" selection-start="740" selection-end="740" vertical-scroll-proportion="-11.083333">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bet.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/bet.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="6" selection-start="1316" selection-end="1316" vertical-scroll-proportion="-5.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pending.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/bets/pending.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="44" selection-start="628" selection-end="628" vertical-scroll-proportion="-13.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reporting.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/dashboard/reporting.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="46" selection-start="458" selection-end="458" vertical-scroll-proportion="0.6803279">
+            <state line="66" column="13" selection-start="1671" selection-end="1678" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,17 +88,17 @@
         <option value="$PROJECT_DIR$/db/migrate/20130915112145_create_bets.rb" />
         <option value="$PROJECT_DIR$/app/models/bid.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/_my_bets.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/bets_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/_well_content.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/dashboard/reporting.html.erb" />
         <option value="$PROJECT_DIR$/app/models/bet.rb" />
         <option value="$PROJECT_DIR$/app/views/bets/pending.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/dashboard/reporting.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
       </list>
     </option>
   </component>
@@ -223,6 +187,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="registrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -663,13 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="97" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="18" selection-start="163" selection-end="163" vertical-scroll-proportion="0.23917995">
@@ -701,13 +706,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/_my_bets.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="33" selection-start="0" selection-end="739" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="23" selection-start="2366" selection-end="2366" vertical-scroll-proportion="0.3084577">
           <folding />
         </state>
       </provider>
@@ -747,23 +745,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/reporting.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="46" selection-start="458" selection-end="458" vertical-scroll-proportion="0.6401028">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/bet.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="6" selection-start="1316" selection-end="1316" vertical-scroll-proportion="-5.0">
+        <state line="4" column="25" selection-start="82" selection-end="93" vertical-scroll-proportion="-2.3076923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/bets/pending.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="44" selection-start="628" selection-end="628" vertical-scroll-proportion="-13.125">
+        <state line="19" column="32" selection-start="418" selection-end="418" vertical-scroll-proportion="0.7089552">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard/reporting.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="46" selection-start="458" selection-end="458" vertical-scroll-proportion="0.6803279">
+        <state line="66" column="13" selection-start="1671" selection-end="1678" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="26" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.3283582">
           <folding />
         </state>
       </provider>

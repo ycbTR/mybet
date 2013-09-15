@@ -2,6 +2,7 @@ class Bet < ActiveRecord::Base
 
   has_many :bids
   belongs_to :user
+  belongs_to :last_bidder, :class_name => "User"
   validates :name, :date, :odd_inflation, :original_odds, :bid_amount, :presence => true
   before_save :do_calculations
   before_create :set_user_id

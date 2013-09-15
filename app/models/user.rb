@@ -52,6 +52,22 @@ class User < ActiveRecord::Base
     self.bids.joins(:bet).where("#{Bet.table_name}.state = ?", 'pending').map(&:bet).uniq
   end
 
+  def won_bets_as_bidder
+    self.bids.joins(:bet).where("#{Bet.table_name}.state = ?", 'won').map(&:bet).uniq
+  end
+
+  def won_payout
+    self.won_bets_as_bidder.map(&:potential_payout).sum rescue 0
+  end
+
+  def spent_on_bidding
+    self.bids.sum(:amount)
+  end
+
+  def balance
+    won_payout - spent_on_bidding
+  end
+
   def past_bets_as_bidder
     self.bids.joins(:bet).where("#{Bet.table_name}.state IN(?)", ['won', 'lost']).map(&:bet).uniq
   end

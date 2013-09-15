@@ -5,8 +5,8 @@
 <table class="table table-striped table-bordered">
   <thead>
   <tr>
-    <th>Username</th>
     <th>Name</th>
+    <th>Current Bidder</th>
     <th>Bid Amount</th>
     <th>Bids Count</th>
     <th>Current Bid</th>
@@ -16,8 +16,8 @@
   <tbody>
   <% @bets.each do |bet| %>
       <tr>
-        <td><%= bet.user.username %></td>
         <td><%= bet.name %></td>
+        <td><%= bet.last_bidder.username %></td>
         <td><%= number_to_currency bet.bid_amount %></td>
         <td><%= bet.bids.count %></td>
         <td><%= number_to_currency bet.current_bid_price %></td>

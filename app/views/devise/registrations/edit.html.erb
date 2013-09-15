@@ -2,7 +2,9 @@
 
   <div class="page-header">
     <div class="pull-left">
-      <h2>My Account</h2>
+      <h2>My Account
+        <small>Balance : <%= number_to_currency current_user.balance %></small>
+      </h2>
     </div>
     <% if @current_user.has_role?('admin') %>
         <div class="pull-right header-button">
@@ -13,9 +15,52 @@
         </div>
     <% end %>
     <div class="clearfix"></div>
-
   </div>
+</div>
 
+
+<!--MY BETS-->
+<div class="well span12">
+  <div class="page-header">
+    <h3>My Bets as Last Person</h3>
+  </div>
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>Bet</th>
+      <th>Bid Amount</th>
+      <th>My Bid Amount Total</th>
+      <th>Amount of Bids</th>
+      <th>Original Odds</th>
+      <th>Final Odds</th>
+      <th colspan="2">Current Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% current_user.bets_as_last_person.each do |bet| %>
+        <tr>
+          <td><%= "#{bet.name}" %></td>
+          <td><%= number_to_currency bet.bid_amount %></td>
+          <td><%= number_to_currency bet.bid_amount_of_person(current_user) %></td>
+          <td><%= bet.bids.count %></td>
+          <td><%= bet.original_odds %></td>
+          <td><%= bet.final_odds %></td>
+          <td>
+            <span class="label label-<%= bet.state %>"><%= bet.state.titleize %></span>
+          </td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+
+
+</div>
+<!--MY BETS-->
+
+<div class="span12 well">
+  <div class="page-header">
+    <h3>Update Account</h3>
+  </div>
   <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:method => :put, :class => "form-horizontal"}) do |f| %>
 
       <div class="control-group">
@@ -66,96 +111,4 @@
         <%= link_to "Back", root_path %>
       </div>
   <% end %>
-</div>
-<hr>
-<div class="well span12">
-  <div class="page-header">
-    <h3>My Bets as Last Person</h3>
-  </div>
-  <table class="table table-bordered table-striped">
-    <thead>
-    <tr>
-      <th>Bet</th>
-      <th>Bid Amount</th>
-      <th>My Bid Amount Total</th>
-      <th>Amount of Bids</th>
-      <th>Original Odds</th>
-      <th>Final Odds</th>
-      <th colspan="2">Current Status</th>
-    </tr>
-    </thead>
-    <tbody>
-    <% current_user.bets_as_last_person.each do |bet| %>
-        <tr>
-          <td><%= "#{bet.name}" %></td>
-          <td><%= number_to_currency bet.bid_amount %></td>
-          <td><%= number_to_currency bet.bid_amount_of_person(current_user) %></td>
-          <td><%= bet.bids.count %></td>
-          <td><%= bet.original_odds %></td>
-          <td><%= bet.final_odds %></td>
-          <td>
-            <span class="label label-<%= bet.state %>"><%= bet.state.titleize %></span>
-          </td>
-        </tr>
-    <% end %>
-    </tbody>
-  </table>
-
-
-</div>
-
-<div class="well span12">
-  <div class="page-header">
-    <h3>Balance</h3>
-  </div>
-  <table class="table table-bordered">
-    <thead>
-    <tr>
-      <th colspan="3">Live Bets</th>
-    </tr>
-    <tr>
-      <th>BET NAME</th>
-      <th>MY BID AMOUNT TOTAL</th>
-      <th>IS LAST PERSON</th>
-      <th>BET STATUS</th>
-    </tr>
-    </thead>
-    <tbody>
-    <% current_user.live_bets_as_bidder.each do |bet| %>
-        <tr>
-          <td> <%= bet.name %> </td>
-          <td> <%= number_to_currency bet.bid_amount_of_person(current_user) %> </td>
-          <td> <%= bet.is_last_person?(current_user) %> </td>
-          <td><span class="label label-<%= bet.state %>"><%= bet.state %> </span> </td>
-        </tr>
-    <% end %>
-
-    </tbody>
-  </table>
-  <hr>
-  <table class="table table-bordered">
-    <thead>
-    <tr>
-      <th colspan="3">Past Bets</th>
-    </tr>
-    <tr>
-      <th>BET NAME</th>
-      <th>MY BID AMOUNT TOTAL</th>
-      <th>IS LAST PERSON</th>
-      <th>BET STATUS</th>
-    </tr>
-    </thead>
-    <tbody>
-    <% current_user.past_bets_as_bidder.each do |bet| %>
-        <tr>
-          <td> <%= bet.name %> </td>
-          <td> <%= number_to_currency bet.bid_amount_of_person(current_user) %> </td>
-          <td> <%= bet.is_last_person?(current_user) %> </td>
-          <td><span class="label label-<%= bet.state %>"><%= bet.state %> </span> </td>
-        </tr>
-    <% end %>
-
-    </tbody>
-
-  </table>
 </div>
