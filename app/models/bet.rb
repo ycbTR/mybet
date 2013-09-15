@@ -74,6 +74,11 @@ class Bet < ActiveRecord::Base
   end
 
 
+  def duplicate
+    _copy = self.dup
+    _copy.save!
+  end
+
   def current_bid_price
     (self.bids.count + 1) * self.bid_amount
   end

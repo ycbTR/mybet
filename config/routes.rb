@@ -7,6 +7,7 @@ Mybet::Application.routes.draw do
   resources :bets do
     member do
       put :bid
+      get :duplicate
     end
     collection do
       get :pending

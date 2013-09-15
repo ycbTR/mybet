@@ -24,7 +24,7 @@
           <%= link_to_with_icon "icon-edit", "Edit", edit_bet_path(bet) %>
         </li>
         <li>
-          <%= link_to_with_icon "icon-repeat", "Duplicate", "Duplicate" %>
+          <%= link_to_with_icon "icon-repeat", "Duplicate", duplicate_bet_path(bet) %>
         </li>
         <li>
           <%= link_to_delete bet, :url => bet_path(bet), :remote => true %>

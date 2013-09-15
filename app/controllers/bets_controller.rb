@@ -16,6 +16,12 @@ class BetsController < ApplicationController
     @bets = Bet.where(:state => "pending")
   end
 
+  def duplicate
+    @bet = Bet.find(params[:id])
+    @bet.duplicate
+    flash[:success] = "Successfully duplicated Bet##{@bet.id}"
+    redirect_to root_path
+  end
 
   def bid
     @bet = Bet.find(params[:id])
