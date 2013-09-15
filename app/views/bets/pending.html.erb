@@ -17,7 +17,7 @@
   <% @bets.each do |bet| %>
       <tr>
         <td><%= bet.name %></td>
-        <td><%= bet.last_bidder.username %></td>
+        <td><%= bet.last_bidder.try(:username) %></td>
         <td><%= number_to_currency bet.bid_amount %></td>
         <td><%= bet.bids.count %></td>
         <td><%= number_to_currency bet.current_bid_price %></td>
