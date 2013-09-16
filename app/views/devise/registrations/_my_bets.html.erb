@@ -17,7 +17,7 @@
     <td><%= number_to_currency bet.bid_amount_of_person(current_user) %></td>
     <td><%= bet.bids.count %></td>
     <td><%= bet.original_odds %></td>
-    <td><%= bet.final_odds %></td>
+    <td>+<%= number_with_precision bet.calculated_final_odds, :precision => 2 %></td>
     <td>
             <span class="label label-<%= bet.state %>"><%= bet.state.titleize %>
                                 </span>

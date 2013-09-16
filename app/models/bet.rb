@@ -97,6 +97,10 @@ class Bet < ActiveRecord::Base
     self.bids.sum(:amount)
   end
 
+  def calculated_final_odds
+    self.final_odds * 100
+  end
+
   private
 
   def do_calculations

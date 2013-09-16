@@ -25,7 +25,7 @@
         <td><%= number_to_currency bet.current_bid_price %></td>
         <td><%= number_to_currency bet.potential_payout %></td>
         <td><%= bet.odd_inflation.to_i %></td>
-        <td><%= bet.final_odds %></td>
+        <td>+<%= number_with_precision bet.calculated_final_odds, :precision => 2 %></td>
         <td><%= link_to_with_icon "icon-ok", "Bid", bid_bet_path(bet), :class => "btn btn-small btn-primary", :method => :put, :confirm => "Are you sure?" %></td>
       </tr>
   <% end %>

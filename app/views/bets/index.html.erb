@@ -26,7 +26,7 @@
         <td><%= bet.name %></td>
         <td><%= bet.date %></td>
         <td><%= bet.original_odds %></td>
-        <td><%= bet.final_odds %></td>
+        <td>+<%= number_with_precision bet.calculated_final_odds, :precision => 2 %></td>
         <td><%= bet.odd_inflation %></td>
         <td><%= bet.bid_amount %></td>
         <td><%= bet.description %></td>
